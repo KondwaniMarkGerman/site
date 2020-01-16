@@ -67,7 +67,7 @@
 		<!-- Header -->
 			<header id="header">
 				<div class="logo"><a href="index.php">Air Pollution <span>Awareness</span></a></div>
-				<a href="#menu"><span>Menu</span></a>
+				<a href="#menu" class="fa fa-bars"><span> Menu</span></a>
 			</header>
 
 		<nav id="menu">
@@ -175,9 +175,10 @@
 
 								<div id="q3">
 								  This is my DIV element.3
-								</div>		
-						
+								</div>
+                    </article>
 						</div>
+
 				</section>
 					 
 		<!-- Footer -->

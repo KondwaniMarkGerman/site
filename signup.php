@@ -58,11 +58,11 @@
 							<input name="name" id="name" type="date" placeholder="enter your dob">
 						</div>
 						
-						<div class="field half" align="left">
+						<div class="field half first" align="left">
 							<label for="name">Address</label>
 							<input name="name" id="name" type="text" placeholder="enter your address">
 						</div>
-						</br>
+
 						
 						<div class="field half first">
 							<label for="name"> Postcode</label>
