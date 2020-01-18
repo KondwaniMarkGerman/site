@@ -37,23 +37,26 @@
 			}
 			
 			<!-- background video -->
-			var video = document.getElementById("myVideo");
+
 			var button = document.getElementById("myBtn");
 			
 			function myFunction2(){
-				
-				if(video.paused){
-					
-					video.play();
-					btn.innerHTML = "Pause";
-				} else {
-					video.paused();
-					btn.innerHTML ="Play";
-					
-				}
-				
+
+
+                if($("#myBtn").text()== "play")
+                {
+                    $("#myBtn").text("Pause");
+                    document.getElementById("myVideo").play();
+
+
+                }else if($("#myBtn").text()== "Pause")
+                {
+                    $("#myBtn").text("play");
+                    document.getElementById("myVideo").pause();
+            }
+
 			}
-			
+
 	</script>
 <html>
 	<head>
@@ -103,13 +106,9 @@
 			</section>
 
 		<!-- One -->
-			<section id="one" class="wrapper post bg-img" data-bg="6.jpg"
+			<section id="one" class="wrapper post bg-img" data-bg="6.jpg">
 			
-			<video autoplay muted loop id="myVideo">
-			
-			 <source src="video/wix.mp4" type="video/mp4">
-			
-			</video>
+
 				<div class="inner">
 					<article class="box">
 					
@@ -121,8 +120,14 @@
 						<div class="content">
 							<p>Scelerisque enim mi curae erat ultricies lobortis donec velit in per cum consectetur purus a enim platea vestibulum lacinia et elit ante scelerisque vestibulum. At urna condimentum sed vulputate a duis in senectus ullamcorper lacus cubilia consectetur odio proin sociosqu a parturient nam ac blandit praesent aptent. Eros dignissim mus mauris a natoque ad suspendisse nulla a urna in tincidunt tristique enim arcu litora scelerisque eros suspendisse.</p>
 						</div>
+                        <video loop id="myVideo">
+
+                            <source src="video/wix.mp4" type="video/mp4">
+                            <source src="video/wixoog.oog" type="video/mp4">
+                            Sorry, your browser does not support the &lt;video&gt; tag used.
+                        </video>
 						<footer>
-							<button id="myBtn" onclick="myFunction2()">Pause</button>
+							<button id="myBtn" onclick="myFunction2()">play</button>
 						</footer>
 					</article>
 				</div>

@@ -3385,16 +3385,16 @@
 				text-decoration: none;
 				-webkit-tap-highlight-color: transparent;
 				background: rgba(255, 255, 255, 0.15);
-				border-radius: 100%;
+				border-radius: 0%;
 				height: 2.5em;
-				width: 2.5em;
+				width: 2.1em;
 				line-height: 2.5em;
 				color: #FFF;
 				text-align: center;
 			}
 
 				#header > a[href="#menu"]:before {
-					content: "?";
+					content:url(../../images/bars.svg);
 					-moz-osx-font-smoothing: grayscale;
 					-webkit-font-smoothing: antialiased;
 					font-family: FontAwesome;
@@ -3534,11 +3534,11 @@
 			text-align: right;
 			top: 0;
 			vertical-align: middle;
-			width: 7em;
+			width: 3em;
 		}
 
 			#menu .close:before {
-				content: "?";
+				content:url(../../images/bars.svg);
 				-moz-osx-font-smoothing: grayscale;
 				-webkit-font-smoothing: antialiased;
 				font-family: FontAwesome;
